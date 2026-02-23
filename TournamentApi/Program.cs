@@ -76,7 +76,7 @@ namespace TournamentApi
             // -----------------------------
             builder.Services.AddDbContext<TournamentDbContext>(options =>
                 options.UseSqlServer(
-                    builder.Configuration.GetConnectionString("TournamentDb")));
+                    builder.Configuration.GetConnectionString("DefaultConnection")));
 
             // -----------------------------
             // Services
